@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class HomePage extends StatelessWidget {
+import 'light&dark_theme.dart';
+
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,15 +19,20 @@ class HomePage extends StatelessWidget {
         title: Text("GetX Toturails"),
       ),
       body: Column(
-        children: [],
+        children: [TextButton(onPressed: (){
+          Get.to(Second_page());
+        }, child: Text("Go to Second page")),],
       ),
       floatingActionButton: FloatingActionButton(backgroundColor: Colors.blue,onPressed: () {
         Get.snackbar("Pradhan", "Subscribe to my channel",
             icon:  Icon(Icons.add_box),
-            onTap: (snap){},mainButton: TextButton(onPressed: (){}, child: Text("Click")),
+            onTap: (snap){},mainButton: TextButton(onPressed: (){
+
+            }, child: Text("Click")),
             backgroundColor: Colors.blue,
             snackPosition: SnackPosition.BOTTOM);
       }),
     );
   }
 }
+
