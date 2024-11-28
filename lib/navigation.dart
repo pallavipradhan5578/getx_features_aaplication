@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';import 'package:get/get.dart';
-class Third_Page extends StatelessWidget {
-  const Third_Page({super.key});
+class Second_Two extends StatelessWidget {
+  const Second_Two({super.key});
 
   @override
   Widget build(BuildContext context) {

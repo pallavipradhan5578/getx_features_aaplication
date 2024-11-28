@@ -20,7 +20,8 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [TextButton(onPressed: (){
-          Get.to(Second_page());
+          //Get.to(Second_One());
+          Get.to(Second_One(name:'Asif taj'));
         }, child: Text("Go to Second page")),],
       ),
       floatingActionButton: FloatingActionButton(backgroundColor: Colors.blue,onPressed: () {

@@ -2,15 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:statemanagementgetx/navigation.dart';
 
-class Second_page extends StatelessWidget {
-  const Second_page({super.key});
+class Second_One extends StatefulWidget {
+final String name;
+  const Second_One({Key? key,required this.name}):super(key: key);
 
+  @override
+  State<Second_One> createState() => _Second_OneState();
+}
+
+class _Second_OneState extends State<Second_One> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text("GetX Toturails"),
+        title: Text("Second One"+widget.name),
       ),
       body: Column(
         children: [
@@ -72,9 +78,9 @@ class Second_page extends StatelessWidget {
                           Get.changeTheme(ThemeData.dark());
                         },
                       ),TextButton(
-                          onPressed: () {Get.to(Third_Page());
-                           // Navigator.push(context,
-                              //  MaterialPageRoute(builder: (context)=>Second_Page()));
+                          onPressed: () {Get.to(Second_Two());
+                            // Navigator.push(context,
+                            //  MaterialPageRoute(builder: (context)=>Second_Page()));
 
                           }, child: Center(child: Text("Go to next page"))),
                     ],
