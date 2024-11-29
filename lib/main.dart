@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:HomeScreen  (),debugShowCheckedModeBanner: false,getPages: [
+      home:Second_One  (name: 'Pallavi',),debugShowCheckedModeBanner: false,getPages: [
         GetPage(name: '/', page: ()=>HomePage()),
       GetPage(name: '/', page: ()=> Second_One(name: 'Pallavi',)), GetPage(name: '/', page: ()=>Second_Two()),
     ],
