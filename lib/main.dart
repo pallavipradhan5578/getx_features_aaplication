@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:statemanagementgetx/HomeScreenforlanguage.dart';
+import 'package:statemanagementgetx/counter_Page.dart';
+import 'package:statemanagementgetx/getx_example_three.dart';
 import 'package:statemanagementgetx/getxstate.dart';
 import 'package:statemanagementgetx/home_Screen.dart';
 import 'package:statemanagementgetx/languages.dart';
@@ -28,10 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:Second_One  (name: 'Pallavi',),debugShowCheckedModeBanner: false,getPages: [
-        GetPage(name: '/', page: ()=>HomePage()),
-      GetPage(name: '/', page: ()=> Second_One(name: 'Pallavi',)), GetPage(name: '/', page: ()=>Second_Two()),
-    ],
+      home:CounterPage   (name: 'pk',),debugShowCheckedModeBanner: false,
     );
   }
 }
