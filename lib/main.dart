@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:CounterPage   (name: 'pk',),debugShowCheckedModeBanner: false,
+      home:Second_One   (name: 'pk',),debugShowCheckedModeBanner: false,
     );
   }
 }

@@ -11,7 +11,7 @@ class Second_Two extends StatelessWidget {
               onPressed: () {
                 Get.back();
                 Get.back();
-              }, child: Center(child: Text("Go back"))),
+              }, child: Center(child: Text("Go Back"))),
         ),
       ],
     )
