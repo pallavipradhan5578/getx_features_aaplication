@@ -9,6 +9,8 @@ import 'package:statemanagementgetx/languages.dart';
 import 'package:statemanagementgetx/light&dark_theme.dart';
 import 'package:statemanagementgetx/navigation.dart';
 
+import 'imagepicker/imagehome.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:Second_One   (name: 'pk',),debugShowCheckedModeBanner: false,
+      home:ImageHome   (),debugShowCheckedModeBanner: false,
     );
   }
 }
