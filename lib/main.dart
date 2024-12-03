@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:statemanagementgetx/HomeScreenforlanguage.dart';
+import 'package:statemanagementgetx/api/apihome.dart';
 import 'package:statemanagementgetx/counter_Page.dart';
 import 'package:statemanagementgetx/getx_example_three.dart';
 import 'package:statemanagementgetx/getxstate.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:ImageHome   (),debugShowCheckedModeBanner: false,
+      home:ApiHome  (),debugShowCheckedModeBanner: false,
     );
   }
 }
