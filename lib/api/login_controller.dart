@@ -19,7 +19,8 @@ RxBool loading =false.obs;
      var data = jsonDecode(response.body);
      //print(data);
     // print(response.statusCode);
-     if (response.statusCode == 200) {loading.value=false;
+     if (response.statusCode == 200) {
+      // loading.value=false;
        Get.snackbar('Login Successfully',data['congratulations']);
      } else { loading.value=false;
 Get.snackbar(backgroundColor: Colors.blue,snackPosition: SnackPosition.BOTTOM,'Login Failed',data['error'],);
