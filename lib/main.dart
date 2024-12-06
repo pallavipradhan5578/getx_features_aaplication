@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:ThemeChanges  (name: 'Theme',),debugShowCheckedModeBanner: false,
+      home:ExampleThree  (name: 'Theme',),debugShowCheckedModeBanner: false,
     );
   }
 }
