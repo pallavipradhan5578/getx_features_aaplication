@@ -10,6 +10,7 @@ import 'package:statemanagementgetx/languages.dart';
 import 'package:statemanagementgetx/light&dark_theme.dart';
 import 'package:statemanagementgetx/navigation.dart';
 import 'package:statemanagementgetx/practics.dart';
+import 'package:statemanagementgetx/spacerwidget.dart';
 
 import 'imagepicker/imagehome.dart';
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:ExampleThree  (name: 'Theme',),debugShowCheckedModeBanner: false,
+      home:SpacerWidget (),debugShowCheckedModeBanner: false,
     );
   }
 }
