@@ -7,10 +7,12 @@ class Languages extends Translations{
     'en_US':{
       'message':'What is your name',
       'name':'Pallavi Kumari'
-    },'ur_PK':{
-      'message':'آپ کا نام کیا ہے ؟',
-      'name':'پلوی کماری'
-    },'hi_IN': {
+    },
+    //'ur_PK':{
+    //'message':'آپ کا نام کیا ہے ؟',
+     // 'name':'پلوی کماری'
+    //},
+    'hi_IN': {
     'message': 'आपका नाम क्या है?',
     'name': 'पल्लवी कुमारी',
   },
