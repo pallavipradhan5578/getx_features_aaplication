@@ -11,6 +11,7 @@ class CounterPage extends StatefulWidget {
 class _CounterPageState extends State<CounterPage> {
   final CounterController controller=Get.put (CounterController());
   int count = 0;
+
   @override
   void initState() {
     super.initState();
