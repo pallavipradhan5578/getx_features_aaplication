@@ -12,6 +12,7 @@ import 'package:statemanagementgetx/navigation.dart';
 import 'package:statemanagementgetx/practics.dart';
 import 'package:statemanagementgetx/spacerwidget.dart';
 
+import 'alertdialog/alert_dialog.dart';
 import 'imagepicker/imagehome.dart';
 
 void main() {
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen (),debugShowCheckedModeBanner: false,
+      home: AlertDialogPage1 (),debugShowCheckedModeBanner: false,
     );
   }
 }

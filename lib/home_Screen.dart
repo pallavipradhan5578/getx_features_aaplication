@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     final height=MediaQuery.of(context).size.height*1;
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.brown,
           title: Text("Getx tutorial"),
         ),
         body: Column(
