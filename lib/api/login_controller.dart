@@ -11,16 +11,16 @@ RxBool loading =false.obs;
  void loginApi() async {
    loading.value=true;
    try {
-     final response = await post(Uri.parse('https://reqres.in/api/login'),
+     final response = await post(Uri.parse('https://reqres.in/api/register'),
          body: {
            "email": emailController.value.text,
            "password": passwordController.value.text
          });
      var data = jsonDecode(response.body);
-     //print(data);
-    // print(response.statusCode);
+     print(data);
+     print(response.statusCode);
      if (response.statusCode == 200) {
-      // loading.value=false;
+       loading.value=false;
        Get.snackbar('Login Successfully',data['congratulations']);
      } else { loading.value=false;
 Get.snackbar(backgroundColor: Colors.blue,snackPosition: SnackPosition.BOTTOM,'Login Failed',data['error'],);

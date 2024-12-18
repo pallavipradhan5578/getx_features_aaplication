@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:statemanagementgetx/HomeScreenforlanguage.dart';
 import 'package:statemanagementgetx/api/apihome.dart';
 import 'package:statemanagementgetx/counter_Page.dart';
+import 'package:statemanagementgetx/getapi/userscreen.dart';
 import 'package:statemanagementgetx/getx_example_three.dart';
 import 'package:statemanagementgetx/getxstate.dart';
 import 'package:statemanagementgetx/home_Screen.dart';
@@ -17,6 +18,7 @@ import 'imagepicker/imagehome.dart';
 
 void main() {
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AlertDialogPage1 (),debugShowCheckedModeBanner: false,
+      home:  UserScreen  (),debugShowCheckedModeBanner: false,
     );
   }
 }
