@@ -9,6 +9,7 @@ import 'package:statemanagementgetx/getxstate.dart';
 import 'package:statemanagementgetx/home_Screen.dart';
 import 'package:statemanagementgetx/languages.dart';
 import 'package:statemanagementgetx/light&dark_theme.dart';
+import 'package:statemanagementgetx/locationservices.dart';
 import 'package:statemanagementgetx/navigation.dart';
 import 'package:statemanagementgetx/practics.dart';
 import 'package:statemanagementgetx/spacerwidget.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  UserScreen  (),debugShowCheckedModeBanner: false,
+      home: LocationServices (),debugShowCheckedModeBanner: false,
     );
   }
 }

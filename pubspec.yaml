@@ -37,6 +37,7 @@ dependencies:
   http:
   get: ^4.6.6
   image_picker:
+  geolocator: ^13.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
